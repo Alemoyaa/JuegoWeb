@@ -14,7 +14,9 @@
     <body> <!--Toda la web esta en el body-->
         <div id="juego">
         </div>
+        <script src="js/teclado.js"></script>
         <script src="js/rectangulo.js"></script>
+        <script src="js/mando.js"></script>
         <script src="js/buclePrincipal.js"></script>
         <script src="js/dimensiones.js"></script>
         <script src="js/inicio.js"></script>
