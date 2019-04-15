@@ -11,7 +11,7 @@
         <title>Juego Web</title><!-- Titulo que va a llevar en la pestaña del navegador -->
 
     </head>
-    <body> <!--Toda la web esta en el body-->
+    <body> <!--Toda la web esta en el body--><!--prueba pull -->
         <div id="juego">
         </div>
         <script src="js/rectangulo.js"></script>
