@@ -7,10 +7,21 @@ document.addEventListener('DOMContentLoaded', function() { //Funcion anonima
 var inicio = {
     iniciarJuego: function(){
         console.log("Juego iniciado");
+        teclado.iniciar();
         dimensiones.iniciar();
-		var r = new Rectangulo(0, 0, 100, 100);
-		var r2 = new Rectangulo(100, 0, 100, 100);
+        mando.iniciar();
+		inicio.recargarTiles();
         buclePrincipal.iterar();
+    },
+    recargarTiles: function() {
+        document.getElementById("juego").innerHTML = "";
+        for(var y = 0; y < dimensiones.obtenerTilesVerticales(); y++){
+            for(var x = 0; x < dimensiones.obtenerTilesHorizontales(); x++) {
+                var r = new Rectangulo(x * dimensiones.ladoTiles, y * dimensiones.ladoTiles, dimensiones.ladoTiles, dimensiones.ladoTiles);
+            }
+        }
     }
+
+    
 };
 

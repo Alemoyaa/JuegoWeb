@@ -11,10 +11,12 @@
         <title>Juego Web</title><!-- Titulo que va a llevar en la pestaña del navegador -->
 
     </head>
-    <body> <!--Toda la web esta en el body--><!--2da prueba pull -->
+    <body> <!--Toda la web esta en el body-->
         <div id="juego">
         </div>
+        <script src="js/teclado.js"></script>
         <script src="js/rectangulo.js"></script>
+        <script src="js/mando.js"></script>
         <script src="js/buclePrincipal.js"></script>
         <script src="js/dimensiones.js"></script>
         <script src="js/inicio.js"></script>
