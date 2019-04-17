@@ -7,6 +7,10 @@ document.addEventListener('DOMContentLoaded', function() { //Funcion anonima
 var inicio = {
     iniciarJuego: function(){
         console.log("Juego iniciado");
+        
+      ajax.cargarArchivo("mapa/desierto.json");
+
+
         teclado.iniciar();
         dimensiones.iniciar();
         mando.iniciar();
