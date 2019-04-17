@@ -11,9 +11,9 @@ var buclePrincipal = {
     fps: 0,
     iterar: function(registroTemporal) {
         buclePrincipal.idEjecucion = window.requestAnimationFrame(buclePrincipal.iterar); //Solicitar cuadro de animacion. cada vez que el navegador hace una de sus actualizaciones nos actualizara esa cantidad de veces nuestro juego
-        
         buclePrincipal.actualizar(registroTemporal);
         buclePrincipal.dibujar();    
+
         
         if(registroTemporal - buclePrincipal.ultimoRegistro > 999) {
             buclePrincipal.ultimoRegistro = registroTemporal;
@@ -26,6 +26,8 @@ var buclePrincipal = {
 
     },
     actualizar: function(registroTemporal){
+        teclado.reiniciar();
+        mando.actualizar();
         buclePrincipal.aps++;
     },
     dibujar: function(registroTemporal){

@@ -5,7 +5,8 @@ function Rectangulo(x, y, ancho, alto){
     this.y = y;
     this.ancho = ancho;
     this.alto = alto;
-    this.id = "r" + x + y; //Nos permite acceder a un rectangulo sabiendo sus cordenadas iniciales
+    this.id = x + "r" + y; //Nos permite acceder a un rectangulo sabiendo sus cordenadas iniciales
+    //this.id = "r" + x + y; Cambiamos esto para que no surgan problemas.. ejemplo r111
     this.insertarDOM(); //con esto lo insertamos en el html
 }
 //Hacemos una funcion compartida para cualquier objeto que se haga, todos los objetos compartiran la funcion
