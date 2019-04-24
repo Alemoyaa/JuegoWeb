@@ -1,9 +1,5 @@
-Proyecto de videojuego online creado por estudiantes de la UTN Mendoza
+# juego-web
 
+Juego desarrollado por estudiantes de la UTN Mendoza
 
-
-Integrantes: Martin Salinas
-             Facundo Bustamante
-             Franco Correa
-             Joaquin Falcioni
-             Alejandro Moya
+Integrantes del proyecto: Martin Salinas | Joaquin Falcioni | Facundo Bustamante | Franco Correa | Alejandro Moya.
