@@ -2,8 +2,6 @@
 //main loop - bucle principal
 //aps - actualizaciones por segundo
 //fps - frames por segundo
-//callback
-//1s = 1000ms
 
 var buclePrincipal = {
 	idEjecucion: null,
@@ -26,11 +24,12 @@ var buclePrincipal = {
 
 	},
 	actualizar: function(registroTemporal) {
-		teclado.reiniciar();
 		mando.actualizar();
+		maquinaEstados.actualizar(registroTemporal);
 		buclePrincipal.aps++;
 	},
 	dibujar: function(registroTemporal) {
+		maquinaEstados.dibujar();
 		buclePrincipal.fps++;
 	}
 };
