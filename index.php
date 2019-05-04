@@ -10,8 +10,12 @@
 	<body>
 		<div id="juego">	
 			<div id="mapa">
-			</div>		
+			</div>
 			<div id="jugador">
+			</div>	
+			<div id="colisiones">
+			</div>
+			<div id="localizaciones">
 			</div>
 		</div>
 		<?php
