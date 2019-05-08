@@ -3,7 +3,7 @@ function JugadorMapamundi(posicionInicialEnPixeles) {
 	this.alto = 48;
 
 	this.rutaHojaSprites = "img/personajes48.png"
-	this.personaje = 20;//Elegir personaje 
+	this.personaje = 27;//Elegir personaje 
 
 	this.origenXSprite = 0;
 	this.origenYSprite = this.alto * this.personaje;
