@@ -18,4 +18,4 @@ var teclado = {
 	teclaPulsada: function(codigoTecla) {
 		return (teclado.teclas.indexOf(codigoTecla) !== -1) ? true : false;
 	}
-}; 
+};
