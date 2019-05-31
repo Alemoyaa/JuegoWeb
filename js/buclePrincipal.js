@@ -2,6 +2,8 @@
 //main loop - bucle principal
 //aps - actualizaciones por segundo
 //fps - frames por segundo
+//callback
+//1s = 1000ms
 
 var buclePrincipal = {
 	idEjecucion: null,
