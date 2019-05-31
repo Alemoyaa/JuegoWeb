@@ -8,14 +8,26 @@
 		<meta name="author" conent="JavaDevOne">
 	</head>
 	<body>
-		<div id="juego">	
+		<div id="juego">
+			<div id="pantalla-titulo">
+			</div>
+
 			<div id="mapa">
 			</div>
+
 			<div id="jugador">
-			</div>	
+			</div>
+
 			<div id="colisiones">
 			</div>
+
 			<div id="localizaciones">
+			</div>
+
+			<div id="score">
+			</div>
+			
+			<div id="popup">
 			</div>
 		</div>
 		<?php
