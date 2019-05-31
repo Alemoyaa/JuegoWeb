@@ -19,7 +19,7 @@ function EstadoPantallaTitulo() {
     document.getElementsByTagName("body")[0].style.overflow = "hidden";
     document.getElementsByTagName("body")[0].style.backgroundColor = "black";
 
-    audio.reproducir(audio.pista1);
+    //audio
 
     document.getElementsByTagName("body")[0].onclick = function() {
         document.getElementById("pantalla-titulo").style.display = "none";
@@ -32,23 +32,24 @@ function EstadoPantallaTitulo() {
 
 EstadoPantallaTitulo.prototype.actualizar = function(registroTemporal) {
     if(this.framesAnimacion < 30) {
-        this.movimientoY++;
-    }
-    if(this.framesAnimacion >= 30 && this.framesAnimacion < 90) {
-        this.movimientoY--;
-    }
-    if(this.framesAnimacion >= 90 && this.framesAnimacion < 120) {
-        this.movimientoY++;
-    }
+        this.movimientoY++;   
+     }
+     if(this.framesAnimacion >= 30 && this.framesAnimacion < 90) {
+         this.movimientoY--;
+     }
+     if(this.framesAnimacion >= 90 && this.framesAnimacion < 120) {
+         this.movimiento++;
+     }
 
-    this.framesAnimacion++;
+     this.framesAnimacion++;
 
-    if(this.framesAnimacion >=120) {
-        this.framesAnimacion = 0;
-        this.movimientoY = 0;
-    }
+     if(this.framesAnimacion >= 120) {
+         this.framesAnimacion = 0;
+         this.movimientoY = 0;
+     }
 }
 
 EstadoPantallaTitulo.prototype.dibujar = function() {
     document.getElementById(this.idHTML).style.transform = 'translate3d(' + (dimensiones.ancho / 2 - this.anchoImagen / 2) + 'px, ' + (dimensiones.alto / 2 - this.altoImagen / 2 + this.movimientoY) + 'px, 0)';
+    
 }

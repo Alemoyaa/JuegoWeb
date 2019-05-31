@@ -1,12 +1,12 @@
-function EstadoMapamundi(idEstado, rutaMapaJSON, xInicial, yInicial) {
+function EstadoMapamundi(idEstado) {
 	var that = this;
 	this.mapaListo = false;
 	this.mapa = null;
 	this.jugadorMapamundi = null;
-	ajax.cargarArchivo(rutaMapaJSON, function(objetoJSON) {
-		that.mapa = new Mapa(objetoJSON, idEstado);
+	ajax.cargarArchivo("mapas/desierto48.json", function(objetoJSON) {
+		that.mapa = new Mapa(objetoJSON);
 		that.mapaListo = true;
-		that.jugadorMapamundi = new JugadorMapamundi(new Punto(xInicial, yInicial), idEstado);
+		that.jugadorMapamundi = new JugadorMapamundi(new Punto(500,500));
 		console.log("mapa cargado por AJAX");
 	});
 }
@@ -20,33 +20,25 @@ EstadoMapamundi.prototype.actualizar = function(registroTemporal) {
 	this.mapa.actualizar(registroTemporal, this.jugadorMapamundi.posicionEnMapaEnPixeles);
 
 	let localizacionAtravesada = false;
-	
-	for(var i = 0; i < this.mapa.rectangulosLocalizaciones.length; i++) {
 
+	for(var i = 0; i < this.mapa.rectangulosLocalizaciones.length; i++){
 		let rActual = this.mapa.rectangulosLocalizaciones[i].rectangulo;
 		let nombre = this.mapa.rectangulosLocalizaciones[i].nombre;
 		let rTemporal = new Rectangulo(rActual.x + this.mapa.posicion.x,
 		rActual.y + this.mapa.posicion.y, rActual.ancho, rActual.alto);
-		let objetoEntradaLocalizacion = null;
-		
-		if(rTemporal.cruza(this.jugadorMapamundi.rectanguloGeneral)) {
-
+		if(rTemporal.cruza(this.jugadorMapamundi.rectanguloGeneral)){
 			localizacionAtravesada = true;
-			objetoEntradaLocalizacion = registroLocalizaciones.obtenerLocalizacion(nombre);
-			if(!popup.visible) {
-
-				popup.mostrar(dimensiones.ancho / 2 - 150, dimensiones.alto / 2 - 100,
+			if(!poput.visible){
+				poput.mostrar(dimensiones.ancho / 2 - 150, dimensiones.alto / 2 - 100,
 				300, nombre);
 			}
-
-			if(teclado.teclaPulsada(controlesTeclado.entrarLocalizacion)) {
-				maquinaEstados.cambiarEstado(listadoEstados.NIVEL, objetoEntradaLocalizacion);
-				console.log(objetoEntradaLocalizacion);
+			if(teclado.teclaPulsada(controlesTeclado.entrarLocalizacion)){
+				console.log("ENTRANDO");
 			}
 		}
 
-		if(!localizacionAtravesada && popup.visible) {
-			popup.ocultar();
+		if(!localizacionAtravesada && poput.visible){
+			poput.ocultar();
 		}
 	}
 }
@@ -55,6 +47,5 @@ EstadoMapamundi.prototype.dibujar = function() {
 	if (!this.mapaListo) {
 		return;
 	}
-	
 	this.mapa.dibujar();
 }
