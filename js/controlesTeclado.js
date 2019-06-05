@@ -4,6 +4,6 @@ var controlesTeclado = {
 	izquierda: 'a',
 	derecha: 'd',
 	entrarLocalizacion: 'r',
-	saltar: ' '
+	//saltar: ' '
 	//agregar tecla de salto y escalera
 };

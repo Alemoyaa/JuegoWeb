@@ -4,15 +4,15 @@ function Mapa(objetoJSON, estadoJuego) { //añadir id estado
 	this.posicionActualizada = new Punto(0,0);
 
 	let rutaCompletaImagenFondo = objetoJSON.tilesets[0].image;
-	let rutaImagenFondo = rutaCompletaImagenFondo.split("/");
-	let nombreImagenFondo = rutaImagenFondo[rutaImagenFondo.length - 1];
-	let nombreMapa = nombreImagenFondo.split(".");
+	let rutaImagenFondo = rutaCompletaImagenFondo.split("/"); //Accedemos a la imagen y al hacer el split partimos el string
+	let nombreImagenFondo = rutaImagenFondo[rutaImagenFondo.length - 1] //Con la parte final para leer el nombre del mapa; 
+	let nombreMapa = nombreImagenFondo.split(".");//De una lado el png y del otro el mapa
 
 	if (this.estadoJuego == listadoEstados.MAPAMUNDI) {
-		this.rutaImagenMapa = "img/" + nombreMapa[0] + ".mapa.png";
+		this.rutaImagenMapa = "img/" + nombreMapa[0] + ".mapa.png"; //Guardamos el nombre del string de la imagen
 	}
 	if (this.estadoJuego == listadoEstados.NIVEL) {
-		this.rutaImagenMapa = "img/" + nombreMapa[0] + ".nivel.png";
+		this.rutaImagenMapa = "img/" + nombreMapa[0] + ".nivel.png"; //
 	}
 
 	this.anchoMedidoEnTiles = parseInt(objetoJSON.width);
