@@ -1553,19 +1553,6 @@
  "tilesets":[
         {
          "columns":17,
-         "firstgid":1,
-         "image":"..\/img\/mapa48.png",
-         "imageheight":576,
-         "imagewidth":816,
-         "margin":0,
-         "name":"mapa48",
-         "spacing":0,
-         "tilecount":204,
-         "tileheight":48,
-         "tilewidth":48
-        }, 
-        {
-         "columns":17,
          "firstgid":205,
          "image":"..\/img\/mapa48.png",
          "imageheight":576,
