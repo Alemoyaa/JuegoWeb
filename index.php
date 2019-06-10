@@ -1,24 +1,37 @@
-<!DOCTYPE html>
-<!---->
-<html lang="es"> <!--lang es un atributo de una etiqueta de html indicamos que va a estar en español el html-->
-    <head> <!--La  cabeza de html se utiliza para declarar cosas atributos o propiedasdes de html-->
-        <meta charset="UTF-8"><!-- meta Esto sirve para dar mas informacion sobre el documento-->
-        <meta name="description" content="Esto es un juego web">
-        <meta name="author" content="Varios">
+<!doctype html>
 
-        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+<html lang="es">
+	<head>
+		<meta charset="utf-8">
+		<title>Juego web</title>
+		<meta name="description" conent="Esto es un juego web">
+		<meta name="author" conent="JavaDevOne">
+	</head>
+	<body>
+		<div id="juego">
+			<div id="pantalla-titulo">
+			</div>
 
-        <title>Juego Web</title><!-- Titulo que va a llevar en la pestaña del navegador -->
+			<div id="mapa">
+			</div>
 
-    </head>
-    <body> <!--Toda la web esta en el body-->
-        <div id="juego">
-        </div>
-        <script src="js/teclado.js"></script>
-        <script src="js/rectangulo.js"></script>
-        <script src="js/mando.js"></script>
-        <script src="js/buclePrincipal.js"></script>
-        <script src="js/dimensiones.js"></script>
-        <script src="js/inicio.js"></script>
-    </body>
+			<div id="jugador">
+			</div>
+
+			<div id="colisiones">
+			</div>
+
+			<div id="localizaciones">
+			</div>
+
+			<div id="score">
+			</div>
+			
+			<div id="popup">
+			</div>
+		</div>
+		<?php
+			include_once 'app/cargadorArchivosJS.inc.php';
+		?>
+	</body>
 </html>
