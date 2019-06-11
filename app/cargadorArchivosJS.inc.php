@@ -3,7 +3,17 @@
 $fecha = new DateTime();
 
 $fuentesJavascript = array(
+	"js/debug.js",
+	"js/dimensiones.js",
+	"js/audio.js",
+	"js/EstadoPantallaTitulo.js",
+	"js/Score.js",
+	"js/popup.js",
 	"js/Rectangulo.js",
+	"js/RegistroLocalizacionEntrada.js",
+	"js/registroLocalizaciones.js",
+	"js/Localizacion.js",
+	"js/JugadorMapamundi.js",
 	"js/Sprite.js",
 	"js/Tile.js",
 	"js/CapaMapaTiles.js",
@@ -14,9 +24,9 @@ $fuentesJavascript = array(
 	"js/maquinaEstados.js",
 	"js/Punto.js",
 	"js/Mapa.js",
-	"js/teclado.js",	
-	"js/mando.js",
-	"js/dimensiones.js",
+	"js/controlesTeclado.js",
+	"js/teclado.js",
+	"js/mando.js",	
 	"js/buclePrincipal.js",
 	"js/inicio.js"
 );

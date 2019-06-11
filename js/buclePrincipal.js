@@ -26,11 +26,12 @@ var buclePrincipal = {
 
 	},
 	actualizar: function(registroTemporal) {
-		teclado.reiniciar();
 		mando.actualizar();
+		maquinaEstados.actualizar(registroTemporal);
 		buclePrincipal.aps++;
 	},
 	dibujar: function(registroTemporal) {
+		maquinaEstados.dibujar();
 		buclePrincipal.fps++;
 	}
 };
