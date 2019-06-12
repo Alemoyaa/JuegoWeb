@@ -59,7 +59,6 @@ function JugadorMapamundi(posicionInicialEnPixeles, estadoJuego) {
 
 JugadorMapamundi.prototype.aplicarEstilos = function() {
 	var idHTML = "jugador";
-	//document.getElementById(idHTML).style.backgroundColor = "white";
 	document.getElementById(idHTML).style.position = "absolute";
 	document.getElementById(idHTML).style.left = this.posicionCentrada.x + "px";
 	document.getElementById(idHTML).style.top = this.posicionCentrada.y + "px";
@@ -245,7 +244,8 @@ JugadorMapamundi.prototype.actualizar = function(registroTemporal, mapa) {
 
 	if(this.estadoJuego == listadoEstados.NIVEL) {
 		this.comprobarColisiones(mapa);
-		this.moverEnNivel();
+		this.moverEnMapamundi();
+		//this.moverEnNivel();
 		this.dirigir();
 		this.animar();
 	}
