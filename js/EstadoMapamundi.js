@@ -34,15 +34,22 @@ EstadoMapamundi.prototype.actualizar = function(registroTemporal) {
 			localizacionAtravesada = true;
 			objetoEntradaLocalizacion = registroLocalizaciones.obtenerLocalizacion(nombre);
 			if(!popup.visible) {
-
 				popup.mostrar(dimensiones.ancho / 2 - 150, dimensiones.alto / 2 - 100,
 				300, nombre);
 			}
 
+			//Tecla para entrar a los niveles
 			if(teclado.teclaPulsada(controlesTeclado.entrarLocalizacion)) {
 				maquinaEstados.cambiarEstado(listadoEstados.NIVEL, objetoEntradaLocalizacion);
 				console.log(objetoEntradaLocalizacion);
 			}
+			
+			//Tecla para volver al mundo 
+			if(teclado.teclaPulsada(controlesTeclado.entrarMapa)){
+				maquinaEstados.cambiarEstado(listadoEstados.MAPAMUNDI);
+				console.log(listadoEstados.MAPAMUNDI);
+			}
+				
 		}
 
 		if(!localizacionAtravesada && popup.visible) {

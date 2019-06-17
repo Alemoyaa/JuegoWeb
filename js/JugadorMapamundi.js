@@ -5,12 +5,12 @@ function JugadorMapamundi(posicionInicialEnPixeles, estadoJuego) {
 	this.alto = 48;
 
 	this.rutaHojaSprites = "img/personajes48.png";
-	this.personaje = 22; //elegir personaje
+	this.personaje = 27; //elegir personaje
 
 	this.origenXSprite = 0;
 	this.origenYSprite = this.alto * this.personaje;
 
-	this.velocidadMovimiento = 3;
+	this.velocidadMovimiento = 20;
 
 	this.velocidadX = 0;
 	this.velocidadY = 0;
@@ -59,7 +59,6 @@ function JugadorMapamundi(posicionInicialEnPixeles, estadoJuego) {
 
 JugadorMapamundi.prototype.aplicarEstilos = function() {
 	var idHTML = "jugador";
-	//document.getElementById(idHTML).style.backgroundColor = "white";
 	document.getElementById(idHTML).style.position = "absolute";
 	document.getElementById(idHTML).style.left = this.posicionCentrada.x + "px";
 	document.getElementById(idHTML).style.top = this.posicionCentrada.y + "px";
@@ -245,7 +244,8 @@ JugadorMapamundi.prototype.actualizar = function(registroTemporal, mapa) {
 
 	if(this.estadoJuego == listadoEstados.NIVEL) {
 		this.comprobarColisiones(mapa);
-		this.moverEnNivel();
+		this.moverEnMapamundi();
+		//this.moverEnNivel();
 		this.dirigir();
 		this.animar();
 	}
