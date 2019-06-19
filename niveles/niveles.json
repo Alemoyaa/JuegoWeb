@@ -2,5 +2,9 @@
     "villa": {
         "mapa": "niveles/villa48.json",
         "imagen": "villa48.nivel.png"
+    },
+    "NorthFarm": {
+        "mapa": "niveles/NorthFarm.json",
+        "imagen": "northfarm48.nivel.png"
     }
 }
