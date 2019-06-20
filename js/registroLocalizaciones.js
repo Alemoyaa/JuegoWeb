@@ -7,7 +7,7 @@ var registroLocalizaciones = {
          
 
         for(var i = 0; i < localizaciones.length; i++) {
-            if(nombreLocalizacion == localizaciones[i].nombre) {
+            if(nombreLocalizacion === localizaciones[i].nombre) {
                 return localizaciones[i];
             }
         }
