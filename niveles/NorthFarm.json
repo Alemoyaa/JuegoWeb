@@ -1303,11 +1303,11 @@
         {
          "columns":64,
          "firstgid":1,
-         "image":"..\/img\/villa48.png",
+         "image":"..\/img\/northfarm48.png",
          "imageheight":1056,
          "imagewidth":3072,
          "margin":0,
-         "name":"villa48",
+         "name":"northfarm48",
          "spacing":0,
          "tilecount":1408,
          "tileheight":48,
