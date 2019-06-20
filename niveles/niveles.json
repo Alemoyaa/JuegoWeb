@@ -6,5 +6,9 @@
     "NorthFarm": {
         "mapa": "niveles/NorthFarm.json",
         "imagen": "northfarm48.nivel.png"
+    },
+    "EL bosque": {
+        "mapa": "niveles/bosque48.json",
+        "imagen": "bosque48.nivel.png"
     }
 }

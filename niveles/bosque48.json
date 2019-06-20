@@ -26,29 +26,6 @@
          "y":0
         }, 
         {
-         "color":"#00ff00",
-         "draworder":"topdown",
-         "id":4,
-         "name":"localizaciones",
-         "objects":[
-                {
-                 "height":102.666666666667,
-                 "id":1,
-                 "name":"Volver",
-                 "rotation":0,
-                 "type":"",
-                 "visible":true,
-                 "width":53.3333333333334,
-                 "x":525.333333333333,
-                 "y":-2.66666666666667
-                }],
-         "opacity":1,
-         "type":"objectgroup",
-         "visible":true,
-         "x":0,
-         "y":0
-        }, 
-        {
          "color":"#ff0000",
          "draworder":"topdown",
          "id":5,
@@ -928,6 +905,29 @@
          "visible":true,
          "x":0,
          "y":0
+        },
+        {
+         "color":"#00ff00",
+         "draworder":"topdown",
+         "id":4,
+         "name":"localizaciones",
+         "objects":[
+                {
+                 "height":102.666666666667,
+                 "id":1,
+                 "name":"Volver",
+                 "rotation":0,
+                 "type":"",
+                 "visible":true,
+                 "width":53.3333333333334,
+                 "x":525.333333333333,
+                 "y":-2.66666666666667
+                }],
+         "opacity":1,
+         "type":"objectgroup",
+         "visible":true,
+         "x":0,
+         "y":0
         }],
  "nextlayerid":6,
  "nextobjectid":81,
@@ -937,11 +937,21 @@
  "tileheight":48,
  "tilesets":[
         {
-         "firstgid":1,
-         "source":"..\/conjuntoPatrones\/villa48.tsx"
+        "columns":22,
+        "firstgid":1,
+        "image":"..\/img\/villa48.png",
+        "imageheight":432,
+        "imagewidth":1056,
+        "margin":0,
+        "name":"villa",
+        "spacing":0,
+        "tilecount":198,
+        "tileheight":48,
+        "tilewidth":48
         }],
  "tilewidth":48,
  "type":"map",
  "version":1.2,
  "width":25
+ 
 }
