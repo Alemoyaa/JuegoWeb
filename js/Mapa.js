@@ -12,7 +12,7 @@ function Mapa(objetoJSON, estadoJuego) { //añadir id estado
 		this.rutaImagenMapa = "img/" + nombreMapa[0] + ".mapa.png"; //Guardamos el nombre del string de la imagen
 	}
 	if (this.estadoJuego == listadoEstados.NIVEL) {
-		this.rutaImagenMapa = "img/" + nombreMapa[0] + ".nivel.png"; 
+		this.rutaImagenMapa = "img/" + nombreMapa[0] + ".nivel.png";  //0 primer mapa 1 segundo y asi
 	}
 
 	this.anchoMedidoEnTiles = parseInt(objetoJSON.width);
