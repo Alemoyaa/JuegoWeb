@@ -42,7 +42,6 @@ EstadoMapamundi.prototype.actualizar = function(registroTemporal) {
 			if(teclado.teclaPulsada(controlesTeclado.entrarLocalizacion)) {
 				maquinaEstados.cambiarEstado(listadoEstados.NIVEL, objetoEntradaLocalizacion);
 				console.log(objetoEntradaLocalizacion);
-				Score.actualiza();
 				Score.mostrar(10,10);
 			}
 			

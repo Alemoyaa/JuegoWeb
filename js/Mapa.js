@@ -31,7 +31,8 @@ function Mapa(objetoJSON, estadoJuego) { //añadir id estado
 	this.limiteMapa = new Rectangulo(this.posicion.x,
 		this.posicion.y,
 		this.anchoMedidoEnTiles * this.anchoDeLosTiles,
-		this.altoMedidoEnTiles * this.altoDeLosTiles, "colision");
+		this.altoMedidoEnTiles * this.altoDeLosTiles, 
+		"colision");
 }
 
 Mapa.prototype.iniciarCapas = function(datosCapas) {
