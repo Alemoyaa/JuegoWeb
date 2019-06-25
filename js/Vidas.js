@@ -18,7 +18,7 @@ var Vidas = {
         
         let id = "vida";
 
-        document.getElementById(id).innerHTML = +""+this.vida;//ACa escribis
+        document.getElementById(id).innerHTML = +""+this.vida;//Aca escribis
         document.getElementById(id).style.display = "block";
         document.getElementById(id).style.position = "initial";
         document.getElementById(id).style.transform = 'translate3d('+ x + 'px, ' + y + 'px, 0' + ')';
