@@ -24,6 +24,9 @@
 			<div id="localizaciones">
 			</div>
 
+			<div id="vida">
+			</div>
+
 			<div id="score">
 			</div>
 			

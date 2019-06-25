@@ -70,6 +70,8 @@ Mapa.prototype.iniciarElementosMapa = function() {
 	document.getElementById(idHTML).style.backgroundClip = "border-box";
 	document.getElementById(idHTML).style.outline = "1px solid transparent";
 
+	Vidas.mostrar();//MostrarVidas
+
 	var htmlColisiones = "";
 	for(c = 0; c < this.rectangulosColisiones.length; c++) {
 		htmlColisiones += this.rectangulosColisiones[c].html;

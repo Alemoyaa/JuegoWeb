@@ -18,7 +18,7 @@ var Vidas = {
         
         let id = "vida";
 
-        document.getElementById(id).innerHTML = +""+this.vida;//Aca escribis
+        document.getElementById(id).innerHTML = "&#10084; Vidas: "+this.vida;//Aca escribis
         document.getElementById(id).style.display = "block";
         document.getElementById(id).style.position = "initial";
         document.getElementById(id).style.transform = 'translate3d('+ x + 'px, ' + y + 'px, 0' + ')';
@@ -32,5 +32,13 @@ var Vidas = {
         document.getElementById(id).style.fontSize = "170%";
         document.getElementById(id).style.webkitTextStroke = "1px black";
 
+    },
+    ocultar: function() {
+        let id = "vida";
+
+        document.getElementById(id).style.display = "none";
+        document.getElementById(id).innerHTML = "";
+
+        vida.visible = false;
     }
 };
