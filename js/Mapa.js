@@ -104,6 +104,7 @@ Mapa.prototype.iniciarElementosMapa = function() {
 	
 	document.getElementsByTagName("body")[0].style.overflow = "hidden";
 	document.getElementsByTagName("body")[0].style.backgroundColor = "black";
+	
 }
 
 Mapa.prototype.actualizar = function(registroTemporal, posicionJugadorEnPixeles) {
