@@ -31,7 +31,12 @@ var Score = {
         document.getElementById(id).style.webkitTextStroke = "1px black";
 
     },
-    ocultar: function(){
-        document.getElementById(id).style.visibility = "hidden";
+    ocultar: function() {
+        let id = "score";
+
+        document.getElementById(id).style.display = "none";
+        document.getElementById(id).innerHTML = "";
+
+        score.visible = false;
     }
 };

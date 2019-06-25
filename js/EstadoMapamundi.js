@@ -47,7 +47,7 @@ EstadoMapamundi.prototype.actualizar = function(registroTemporal) {
 			}
 			
 			//Tecla para volver al mundo 
-			if((teclado.teclaPulsada(controlesTeclado.entrarMapa))&& maquinaEstados.estado() == 3){
+			if(teclado.teclaPulsada(controlesTeclado.entrarMapa)){
 				maquinaEstados.cambiarEstado(listadoEstados.MAPAMUNDI);
 				console.log(listadoEstados.MAPAMUNDI);
 				Score.ocultar();
