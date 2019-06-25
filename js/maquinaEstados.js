@@ -28,5 +28,8 @@ var maquinaEstados = {
 	},
 	dibujar: function() {
 		maquinaEstados.estadoActual.dibujar();
+	},
+	estado: function(){
+		return this.estadoActual.listadoEstados;
 	}
 }

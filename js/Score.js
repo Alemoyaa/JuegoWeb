@@ -30,5 +30,8 @@ var Score = {
         document.getElementById(id).style.fontSize = "170%";
         document.getElementById(id).style.webkitTextStroke = "1px black";
 
+    },
+    ocultar: function(){
+        document.getElementById(id).style.visibility = "hidden";
     }
 };

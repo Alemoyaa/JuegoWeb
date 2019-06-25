@@ -42,12 +42,15 @@ EstadoMapamundi.prototype.actualizar = function(registroTemporal) {
 			if(teclado.teclaPulsada(controlesTeclado.entrarLocalizacion)) {
 				maquinaEstados.cambiarEstado(listadoEstados.NIVEL, objetoEntradaLocalizacion);
 				console.log(objetoEntradaLocalizacion);
+				Score.actualiza();
+				Score.mostrar(10,10);
 			}
 			
 			//Tecla para volver al mundo 
-			if(teclado.teclaPulsada(controlesTeclado.entrarMapa)){
+			if((teclado.teclaPulsada(controlesTeclado.entrarMapa))&& maquinaEstados.estado() == 3){
 				maquinaEstados.cambiarEstado(listadoEstados.MAPAMUNDI);
 				console.log(listadoEstados.MAPAMUNDI);
+				Score.ocultar();
 			}
 				
 		}

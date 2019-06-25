@@ -138,11 +138,6 @@ JugadorMapamundi.prototype.moverEnNivel = function() {
 	this.velocidadX = 0;
 	this.velocidadY = 0;
 
-	if(teclado.teclaPulsada(controlesTeclado.saltar)){
-		Score.actualiza();
-		Score.mostrar(10,10);
-	}
-
 	if(this.saltoBloqueado && this.colisionAbajo && !teclado.teclaPulsada(controlesTeclado.saltar)) {
 		this.saltoBloqueado = false;
 		this.velocidadCaida = 0;
