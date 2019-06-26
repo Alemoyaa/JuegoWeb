@@ -28,6 +28,7 @@ EstadoMapamundi.prototype.actualizar = function(registroTemporal) {
 		let rTemporal = new Rectangulo(rActual.x + this.mapa.posicion.x,
 		rActual.y + this.mapa.posicion.y, rActual.ancho, rActual.alto);
 		let objetoEntradaLocalizacion = null;
+		Vidas.mostrar();//MostrarVidas
 		
 		if(rTemporal.cruza(this.jugadorMapamundi.rectanguloGeneral)) {
 

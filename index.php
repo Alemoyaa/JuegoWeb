@@ -3,9 +3,9 @@
 <html lang="es">
 	<head>
 		<meta charset="utf-8">
-		<title>Juego web</title>
-		<meta name="description" conent="Esto es un juego web">
-		<meta name="author" conent="JavaDevOne">
+		<title>Aventuras de Tux</title>
+		<meta name="description" conent="Juego de estudiantes de la UTN FRM">
+		<meta name="author" conent="Estudiantes UTN">
 	</head>
 	<body>
 		<div id="juego">

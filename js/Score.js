@@ -16,7 +16,7 @@ var Score = {
         
         let id = "score";
 
-        document.getElementById(id).innerHTML = "Puntaje: "+this.score;//ACa escribis
+        document.getElementById(id).innerHTML = "Puntaje: "+this.score;//Aca escribis
         document.getElementById(id).style.display = "block";
         document.getElementById(id).style.position = "initial";
         document.getElementById(id).style.transform = 'translate3d('+ x + 'px, ' + y + 'px, 0' + ')';
@@ -36,7 +36,5 @@ var Score = {
 
         document.getElementById(id).style.display = "none";
         document.getElementById(id).innerHTML = "";
-
-        score.visible = false;
     }
 };
