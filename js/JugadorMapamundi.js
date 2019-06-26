@@ -127,7 +127,7 @@ JugadorMapamundi.prototype.moverEnMapamundi = function() {
 	this.posicionEnMapaEnPixeles.x += this.velocidadX;
 	this.posicionEnMapaEnPixeles.y += this.velocidadY;
 }
-
+/*
 JugadorMapamundi.prototype.moverEnNivel = function() {
 	this.velocidadX = 0;
 	this.velocidadY = 0;
@@ -160,19 +160,8 @@ JugadorMapamundi.prototype.moverEnNivel = function() {
 			this.velocidadCaida += 0.3;
 		}
 	}
-
-	if(!this.colisionIzquierda && teclado.teclaPulsada(controlesTeclado.izquierda)) {
-		this.velocidadX = 1 * this.velocidadMovimiento;
-	}
-
-	if(!this.colisionDerecha && teclado.teclaPulsada(controlesTeclado.derecha)) {
-		this.velocidadX = -1 * this.velocidadMovimiento;
-	}
-
-	this.posicionEnMapaEnPixeles.x += this.velocidadX;
-	this.posicionEnMapaEnPixeles.y += this.velocidadY;
 }
-
+*/
 JugadorMapamundi.prototype.dirigir = function() {
 	if(this.velocidadX < 0) { //izquierda
 		this.origenXSprite = this.ancho * 3;
