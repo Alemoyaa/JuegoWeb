@@ -142,24 +142,6 @@ JugadorMapamundi.prototype.moverEnNivel = function() {
 		this.subiendo = true;
 		this.saltoBloqueado = true;
 	}
-
-	if (!this.colisionArriba && this.subiendo) {
-		this.framesAereos--;
-		this.velocidadY = 1 * this.velocidadMovimiento + this.framesAereos;
-
-		if(this.framesAereos <= 0) {
-			this.subiendo = false;
-			this.framesAereos = this.framesAereosMaximos;
-		}
-	}
-
-	if (!this.colisionAbajo && !this.subiendo) {
-		this.velocidadY = Math.round(-this.velocidadCaida);
-		console.log(this.velocidadY);
-		if(this.velocidadCaida < this.velocidadTerminal) {
-			this.velocidadCaida += 0.3;
-		}
-	}
 }
 */
 JugadorMapamundi.prototype.dirigir = function() {

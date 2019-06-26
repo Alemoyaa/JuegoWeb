@@ -5,7 +5,6 @@ var registroLocalizaciones = {
         localizaciones.push(new RegistroLocalizacionEntrada("El bosque", "niveles/bosque48.json", "img/bosque48.nivel.png", 540, 40));
         localizaciones.push(new RegistroLocalizacionEntrada("North Farm", "niveles/NorthFarm.json", "img/northfarm48.nivel.png", 803, 1390));
         
-
         for(var i = 0; i < localizaciones.length; i++) {
             if(nombreLocalizacion == localizaciones[i].nombre) {
                 return localizaciones[i];
