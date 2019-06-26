@@ -127,23 +127,6 @@ JugadorMapamundi.prototype.moverEnMapamundi = function() {
 	this.posicionEnMapaEnPixeles.x += this.velocidadX;
 	this.posicionEnMapaEnPixeles.y += this.velocidadY;
 }
-/*
-JugadorMapamundi.prototype.moverEnNivel = function() {
-	this.velocidadX = 0;
-	this.velocidadY = 0;
-
-	if(this.saltoBloqueado && this.colisionAbajo && !teclado.teclaPulsada(controlesTeclado.saltar)) {
-		this.saltoBloqueado = false;
-		this.velocidadCaida = 0;
-		console.log();
-	}
-
-	if(!this.saltoBloqueado && teclado.teclaPulsada(controlesTeclado.saltar)) {
-		this.subiendo = true;
-		this.saltoBloqueado = true;
-	}
-}
-*/
 JugadorMapamundi.prototype.dirigir = function() {
 	if(this.velocidadX < 0) { //izquierda
 		this.origenXSprite = this.ancho * 3;
@@ -205,7 +188,6 @@ JugadorMapamundi.prototype.actualizar = function(registroTemporal, mapa) {
 	if(this.estadoJuego == listadoEstados.NIVEL) {
 		this.comprobarColisiones(mapa);
 		this.moverEnMapamundi();
-		//this.moverEnNivel();
 		this.dirigir();
 		this.animar();
 	}

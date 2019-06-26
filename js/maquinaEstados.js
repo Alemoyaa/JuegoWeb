@@ -20,6 +20,8 @@ var maquinaEstados = {
 				console.log("Lanzando Titulo");
 				maquinaEstados.estadoActual = new EstadoPantallaTitulo();
 				break;
+			default:
+				console.log("Mapa en desarrollo");
 		}
 	},
 	actualizar: function(registroTemporal) {
