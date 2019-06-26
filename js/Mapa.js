@@ -82,10 +82,6 @@ Mapa.prototype.iniciarElementosMapa = function() {
 		htmlLocalizaciones += this.rectangulosLocalizaciones[l].rectangulo.html;
 	}
 	document.getElementById("localizaciones").innerHTML = htmlLocalizaciones;
-	
-	//bloque de escaleras
-
-	//bloque de daño
 
 	if(debug.debugging) {
 		for (c = 0; c < this.rectangulosColisiones.length; c++) {
@@ -95,8 +91,6 @@ Mapa.prototype.iniciarElementosMapa = function() {
 		for (l = 0; l < this.rectangulosLocalizaciones.length; l++) {
 			this.rectangulosLocalizaciones[l].rectangulo.aplicarEstiloTemporal("#00ff00");
 		}
-		//bloque daño
-		//bloque escaleras debugging
 	}
 	
 	
@@ -124,9 +118,5 @@ Mapa.prototype.dibujar = function() {
 		for (rl = 0; rl < this.rectangulosLocalizaciones.length; rl++) {
 			this.rectangulosLocalizaciones[rl].rectangulo.mover(this.posicion.x, this.posicion.y);
 		}
-
-		//bloque dibujado escaleras
-
-		//bloque de daño
 	}
 }
