@@ -37,13 +37,13 @@ function Mapa(objetoJSON, estadoJuego) { //añadir id estado
 Mapa.prototype.iniciarCapas = function(datosCapas) {
 	for (i = 0; i < datosCapas.length; i++) {
 		if (datosCapas[i].name == "colisiones") {
-			console.log("capa colisiones");
 			for (c = 0; c < datosCapas[i].objects.length; c++) {
 				this.rectangulosColisiones.push(new Rectangulo(
 					datosCapas[i].objects[c].x, datosCapas[i].objects[c].y,
 					datosCapas[i].objects[c].width, datosCapas[i].objects[c].height, "colision"
 				));
 			}
+			console.log("Capa colisiones cargada con Exito");
 		}
 		if (datosCapas[i].name == "localizaciones") {
 			for (l = 0; l < datosCapas[i].objects.length; l++) {
@@ -52,6 +52,7 @@ Mapa.prototype.iniciarCapas = function(datosCapas) {
 					datosCapas[i].objects[l].width, datosCapas[i].objects[l].height, "localizacion"
 				), datosCapas[i].objects[l].name));
 			}
+			console.log("Capa localizaciones cargada con Exito");
 		}
 	}
 }
