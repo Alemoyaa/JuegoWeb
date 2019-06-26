@@ -26,7 +26,7 @@ var Score = {
         document.getElementById(id).style.color = "white";
         document.getElementById(id).style.padding = "0.5em";
         document.getElementById(id).style.textAlign = "center";
-        document.getElementById(id).style.fontFamily = "sans-serif, Helvetica";
+        document.getElementById(id).style.fontFamily = "sans-serif, Helvetica, arial";
         document.getElementById(id).style.fontSize = "170%";
         document.getElementById(id).style.webkitTextStroke = "1px black";
 

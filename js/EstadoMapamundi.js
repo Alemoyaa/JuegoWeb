@@ -42,7 +42,7 @@ EstadoMapamundi.prototype.actualizar = function(registroTemporal) {
 			if(teclado.teclaPulsada(controlesTeclado.entrarLocalizacion)) {
 				maquinaEstados.cambiarEstado(listadoEstados.NIVEL, objetoEntradaLocalizacion);
 				console.log(objetoEntradaLocalizacion);
-				Score.mostrar(10,10);
+				Score.mostrar(30,5);
 			}
 			
 			//Tecla para volver al mundo 
