@@ -5,7 +5,7 @@ function JugadorMapamundi(posicionInicialEnPixeles, estadoJuego) {
 	this.alto = 48;
 
 	this.rutaHojaSprites = "img/personajes48.png";
-	this.personaje = 5; //elegir personaje
+	this.personaje = 5;
 
 	this.origenXSprite = 0;
 	this.origenYSprite = this.alto * this.personaje;
@@ -24,14 +24,9 @@ function JugadorMapamundi(posicionInicialEnPixeles, estadoJuego) {
 	this.velocidadTerminal = 10;
 	this.velocidadCaida = 0;
 
-	//this.score = 0;
-
-	//modo escalera
-
 	this.enMovimiento = false;
 	this.framesAnimacion = 0;
 
-	//eliminar decimales y centrar al jugador
 	var centroX = Math.trunc(dimensiones.ancho / 2 - this.ancho / 2);
 	var centroY = Math.trunc(dimensiones.alto / 2 - this.alto / 2);
 	this.posicionCentrada = new Punto(centroX, centroY);
@@ -47,7 +42,6 @@ function JugadorMapamundi(posicionInicialEnPixeles, estadoJuego) {
 	this.colisionIzquierda = false;
 	this.colisionDerecha = false;
 
-	//convertir positivos en negativos y viceversa
 	posicionInicialEnPixeles.x *= -1;
 	posicionInicialEnPixeles.y *= -1;
 

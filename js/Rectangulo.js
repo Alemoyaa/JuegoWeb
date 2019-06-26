@@ -19,7 +19,6 @@ Rectangulo.prototype.aplicarEstiloTemporal = function(colorHexadecimal) {
 		throw("El ID " + this.idHTML + " no existe en la hoja");
 	}
 	
-	//var color = "#ff0000";
 	document.getElementById(this.idHTML).style.backgroundColor = colorHexadecimal;
 
 	document.getElementById(this.idHTML).style.position = "absolute";

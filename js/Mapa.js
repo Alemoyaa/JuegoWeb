@@ -22,7 +22,6 @@ function Mapa(objetoJSON, estadoJuego) { //añadir id estado
 
 	this.rectangulosColisiones = [];
 	this.rectangulosLocalizaciones = [];
-	//rectangulos escaleras
 
 	this.iniciarCapas(objetoJSON.layers);
 
@@ -54,8 +53,6 @@ Mapa.prototype.iniciarCapas = function(datosCapas) {
 				), datosCapas[i].objects[l].name));
 			}
 		}
-		//bloque if capas de escaleras
-		//bloque de daño
 	}
 }
 
