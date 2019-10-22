@@ -4,6 +4,14 @@ function EstadoPantallaTitulo() {
     this.anchoImagen = "500";
     this.altoImagen = "300";
 
+    var input = prompt("Comandos disponibles: ", "jugar", "creditos");
+
+    if ((input == "jugar")) {
+    
+        alert("Permiso denegado");
+
+    }
+
     this.movimientoY = 0;
 
     this.framesAnimacion = 0;
