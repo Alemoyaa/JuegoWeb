@@ -4,14 +4,27 @@ function EstadoPantallaTitulo() {
     this.anchoImagen = "500";
     this.altoImagen = "300";
 
-    var input = prompt("Comandos disponibles: ", "jugar", "creditos");
+    var err = true;
 
-    if ((input == "jugar")) {
+    while(err){
+        var input = prompt("Comandos disponibles: ", "jugar, creditos");
+
+        if ((input == "jugar")) {
+        
+            alert("Permiso denegado, utilice sudo");
     
-        alert("Permiso denegado");
+        } else if (input == "sudo jugar"){
+            err = false;
+        } else if (input == "creditos") {
+            err = false;
+        } else {
+            continue;
+        }
 
+        
     }
 
+    
     this.movimientoY = 0;
 
     this.framesAnimacion = 0;
