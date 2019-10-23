@@ -24,7 +24,7 @@ function EstadoPantallaTitulo() {
         
     }
 
-    
+ 
     this.movimientoY = 0;
 
     this.framesAnimacion = 0;
